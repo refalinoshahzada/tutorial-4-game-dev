@@ -1,15 +1,13 @@
-[gd_scene format=3 uid="uid://bl88ttjuayvmy"]
+[gd_scene format=3 uid="uid://cqntdxpl0oyu0"]
 
-[ext_resource type="Script" uid="uid://6lginxsnjiq6" path="res://scenes/ExperimentArea.gd" id="1_svk5y"]
+[ext_resource type="Script" uid="uid://dx6g5dlievr42" path="res://scenes/AreaTrigger.gd" id="1_iuiid"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhxoo"]
-size = Vector2(173, 149)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ocr2"]
 
-[node name="Area2D" type="Area2D" unique_id=1825343302]
-script = ExtResource("1_svk5y")
+[node name="AreaTrigger" type="Area2D" unique_id=251677921]
+script = ExtResource("1_iuiid")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=373433552]
-position = Vector2(0.5, 0.5)
-shape = SubResource("RectangleShape2D_nhxoo")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1875512462]
+shape = SubResource("RectangleShape2D_7ocr2")
 
-[connection signal="body_entered" from="." to="." method="_on_Area_Trigger_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

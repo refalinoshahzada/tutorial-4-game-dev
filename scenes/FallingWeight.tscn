@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c0v45uudafjd7"]
+
+[ext_resource type="Script" uid="uid://s76cir6io5n4" path="res://scenes/FallingFish.gd" id="1_ia4f0"]
+[ext_resource type="Texture2D" uid="uid://dn0jnesccx37g" path="res://assets/kenney_platformerpack/PNG/Tiles/weight.png" id="1_n2rpl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n2rpl"]
+size = Vector2(125, 136)
+
+[node name="FallingWeight" type="RigidBody2D" unique_id=2016360689]
+script = ExtResource("1_ia4f0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=983959948]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_n2rpl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=87076526]
+texture = ExtResource("1_n2rpl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

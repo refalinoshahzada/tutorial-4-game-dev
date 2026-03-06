@@ -61,20 +61,20 @@ _data = {
 &"Walk": SubResource("4")
 }
 
-[node name="Player" type="CharacterBody2D" unique_id=1750335351]
+[node name="Player" type="CharacterBody2D" unique_id=1793894908]
 script = ExtResource("1_xsgpf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966217613]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888103337]
 shape = SubResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1616543293]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1221890124]
 position = Vector2(0, -25)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2")
 hframes = 4
 frame = 2
 
-[node name="Animator" type="AnimationPlayer" parent="." unique_id=1558224844]
+[node name="Animator" type="AnimationPlayer" parent="." unique_id=613578278]
 libraries/ = SubResource("AnimationLibrary_sbh6e")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1648633296]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=983664967]

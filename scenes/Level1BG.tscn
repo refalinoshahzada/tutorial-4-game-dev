@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://5clugwstwsvt"]
+
+[ext_resource type="Texture2D" uid="uid://rvnp3wmmh30b" path="res://assets/level1.png" id="1_8my6m"]
+
+[node name="Level1Background" type="TextureRect" unique_id=1541944726]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_8my6m")

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bjrgilkw6m3gd"]
+
+[sub_resource type="FontFile" id="FontFile_ukcvp"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[node name="MainMenu" type="MarginContainer" unique_id=803225699]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=638921128]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1002655352]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=556831681]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_ukcvp")
+text = "One, Two, Platform!"
+
+[node name="Buttons" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=839059612]
+layout_mode = 2
+
+[node name="NewGameButton" type="LinkButton" parent="HBoxContainer/VBoxContainer/Buttons" unique_id=315815615]
+layout_mode = 2
+text = "New Game"
+
+[node name="StageSelectButton" type="LinkButton" parent="HBoxContainer/VBoxContainer/Buttons" unique_id=172324029]
+layout_mode = 2
+text = "Stage Select"
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer" unique_id=1482860342]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="HBoxContainer/CenterContainer" unique_id=914705341]
+layout_mode = 2

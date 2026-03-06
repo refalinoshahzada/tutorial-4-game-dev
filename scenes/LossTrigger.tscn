@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dm8ub3dypcxa7"]
+
+[sub_resource type="GDScript" id="GDScript_4vpgk"]
+script/source = "extends Area2D
+
+@export var sceneName: String = \"Level1\"
+
+func _on_body_entered(body):
+	if body.name == \"Player\":
+		get_tree().change_scene_to_file(\"res://scenes/\" + sceneName + \".tscn\")
+"
+
+[node name="LossTrigger" type="Area2D" unique_id=1954440575]
+script = SubResource("GDScript_4vpgk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=963718969]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
