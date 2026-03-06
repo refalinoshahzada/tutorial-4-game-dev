@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c5kj1m7k21jja"]
+
+[ext_resource type="Script" uid="uid://c7byakmkore4k" path="res://scenes/Weight.gd" id="1_cnbxg"]
+[ext_resource type="Texture2D" uid="uid://dn0jnesccx37g" path="res://assets/kenney_platformerpack/PNG/Tiles/weight.png" id="1_jmx1s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmx1s"]
+size = Vector2(118, 109)
+
+[node name="Weight" type="RigidBody2D" unique_id=683628506]
+script = ExtResource("1_cnbxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1059294854]
+texture = ExtResource("1_jmx1s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2026159607]
+position = Vector2(-1, 9.5)
+shape = SubResource("RectangleShape2D_jmx1s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

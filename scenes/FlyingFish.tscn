@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b0qjsynq2cn4j"]
+
+[ext_resource type="Texture2D" uid="uid://bivk5n8i3vnqc" path="res://assets/kenney_platformerpack/PNG/Enemies/fishBlue.png" id="1_lc73b"]
+[ext_resource type="Script" uid="uid://4jb01xik7ao1" path="res://scenes/FlyingFish.gd" id="1_pjold"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjold"]
+radius = 37.0
+height = 110.0
+
+[node name="FlyingFish" type="RigidBody2D" unique_id=1030333957]
+script = ExtResource("1_pjold")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1862869722]
+rotation = 3.1350713
+texture = ExtResource("1_lc73b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=602753852]
+shape = SubResource("CapsuleShape2D_pjold")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

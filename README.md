@@ -1,0 +1,7 @@
+# Tutorial
+
+Pada tutorial ini saya mempelajari cara menambahkan rintangan baru menggunakan sistem spawner. Pertama saya membuat scene baru untuk objek FlyingFish dengan RigidBody2D sebagai root node, lalu menambahkan Sprite2D dan CollisionShape2D menggunakan aset ikan yang tersedia agar objek memiliki tampilan dan collider. Setelah itu saya menambahkan script yang akan memicu kondisi kalah ketika pemain bertabrakan dengan ikan. Selanjutnya saya membuat objek Spawner di Level 1 menggunakan Node2D dan menambahkan script yang akan menginstansiasi scene ikan setiap satu detik dengan posisi acak pada sumbu X, sehingga ikan terlihat seperti jatuh dari langit selama permainan berlangsung.
+
+# Latihan Mandiri
+
+Pada bagian latihan mandiri, saya mencoba membuat level-level berikutnya setelah Level 1 dengan desain yang saya tentukan sendiri. Dalam proses ini saya mengatur tata letak platform, jarak antar rintangan, serta penempatan objek seperti jurang atau spawner agar tingkat kesulitan permainan meningkat secara bertahap. Tujuannya adalah agar pemain harus lebih berhati-hati dalam mengatur lompatan, menghindari rintangan, dan memperhitungkan timing pergerakan. Dengan merancang level sendiri, saya jadi lebih memahami bagaimana struktur scene dalam Godot bekerja, bagaimana mengatur gameplay flow, serta bagaimana membuat level yang tetap menantang tetapi masih dapat diselesaikan oleh pemain.

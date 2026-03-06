@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b118pvmscylk6"]
+
+[ext_resource type="Texture2D" uid="uid://bivk5n8i3vnqc" path="res://assets/kenney_platformerpack/PNG/Enemies/fishBlue.png" id="2_gccpt"]
+
+[sub_resource type="GDScript" id="GDScript_clc22"]
+script/source = "extends RigidBody2D
+
+
+@export var sceneName = \"LoseScreen\"
+
+func _on_FallArea_body_entered(body):
+	if body.get_name() == \"Player\":
+		get_tree().change_scene_to_file(str(\"res://scenes/\" + sceneName + \".tscn\"))
+	else:
+		body.queue_free()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_63e2e"]
+radius = 34.0
+height = 110.0
+
+[node name="FallingFish" type="RigidBody2D" unique_id=1475783060]
+script = SubResource("GDScript_clc22")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1714423557]
+rotation = 3.117794
+texture = ExtResource("2_gccpt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1537634953]
+shape = SubResource("CapsuleShape2D_63e2e")
